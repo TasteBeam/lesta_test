@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="{% url "admin:index" %}">Админ панель</a>
+        </ul>
+    </header>
+    <form enctype="multipart/form-data" action="{% url "index" %}" method="post">
+        {% csrf_token %}
+        <label>Добавить файл</label>
+        {{ form }}
+
+        <button type="submit" value="Добавить", class="btn btn-primary">Добавить</button>
+    </form>
+</body>
+</html>
