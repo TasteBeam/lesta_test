@@ -20,9 +20,10 @@
 2. python -m venv venv && source venv/bin/activate (linux) <br>
    python -m venv venv && venv\Scripts\activate (windows)
 
-3. python app/manage.py makemigrations <br>
+3. pip install requirements.txt
+4. python app/manage.py makemigrations <br>
    python app/manage.py migrate <br>
-   python app/manage.py runserver
+   python app/manage.py runserver <br>
 
 Запустится локальный сервер. `http://127.0.0.1:8000/`
 
